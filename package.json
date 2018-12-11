@@ -1,0 +1,35 @@
+{
+  "name": "github-user-list",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://frejp.github.io/github-user-list/",
+  "dependencies": {
+    "parse-link-header": "^1.0.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-redux": "^5.1.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts-ts": "3.1.0",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.83.0"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build && cp build/index.html build/404.html",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject",
+    "deploy-to-git": "npm run build && gh-pages -d build"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/node": "^10.12.10",
+    "@types/react": "^16.7.10",
+    "@types/react-dom": "^16.0.11",
+    "@types/react-redux": "^6.0.10",
+    "@types/react-router-dom": "^4.3.1",
+    "typescript": "^3.2.1",
+    "gh-pages": "^2.0.1"
+  }
+}
