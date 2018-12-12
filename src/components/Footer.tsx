@@ -25,23 +25,19 @@ class Footer extends React.Component<Props, {}> {
     render() {
 
         return (
-            <div style={{width: "100%", height: "90px"}}>
-                <div
-                    style={{backgroundColor: "white", width: "82%", height: "100%", marginLeft: "9%", marginTop: "20px"}}>
-                    <div style={{margin: "auto", width: "fit-content", height: "100px"}}>
-                        <div style={{float: "left"}}>
-                            <Button size={"large"} onClick={this.back} icon labelPosition='left'>
-                                Back
-                                <Icon name='angle left'/>
-                            </Button>
-                        </div>
-                        <div style={{float:"left"}}>
-                            <Button size={"large"} onClick={this.next} icon labelPosition='right'>
-                                Next
-                                <Icon name='angle right'/>
-                            </Button>
-                        </div>
-                    </div>
+            <div
+                style={{margin: "calc(50% - 130px)", width: "260px", height: "50px", marginTop: "30px", marginBottom: "30px"}}>
+                <div style={{float: "left"}}>
+                    <Button size={"large"} onClick={this.back} icon labelPosition='left'>
+                        Back
+                        <Icon name='angle left'/>
+                    </Button>
+                </div>
+                <div style={{float:"left"}}>
+                    <Button size={"large"} onClick={this.next} icon labelPosition='right'>
+                        Next
+                        <Icon name='angle right'/>
+                    </Button>
                 </div>
             </div>
         );
