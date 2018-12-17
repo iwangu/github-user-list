@@ -23,7 +23,6 @@ class Footer extends React.Component<Props, {}> {
     }
 
     render() {
-
         return (
             <div
                 style={{margin: "calc(50% - 130px)", width: "260px", height: "50px", marginTop: "30px", marginBottom: "30px"}}>
@@ -42,6 +41,7 @@ class Footer extends React.Component<Props, {}> {
             </div>
         );
     }
+
 }
 
 export default Footer;

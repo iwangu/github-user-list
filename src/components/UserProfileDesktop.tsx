@@ -72,7 +72,6 @@ export const UserProfileDesktop:React.StatelessComponent<Props> = ({ userDetail 
                 <Button as={ Link } name='Back' to='/' positive>Back</Button>
 
             </div>
-
         </div>
     );
 

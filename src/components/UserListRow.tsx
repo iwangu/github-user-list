@@ -9,6 +9,7 @@ interface Props {
 }
 
 export const UserListRow:React.StatelessComponent<Props> = ({ user }) => {
+
     return (
         <Card fluid>
             <Link to={`/user/${user.login}`}>
@@ -22,7 +23,9 @@ export const UserListRow:React.StatelessComponent<Props> = ({ user }) => {
 
                 </Card.Header>
             </Card.Content>
-        </Card>);
+        </Card>
+    );
+
 };
 
 export default UserListRow;

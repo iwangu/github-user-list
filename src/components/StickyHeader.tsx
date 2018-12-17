@@ -24,9 +24,9 @@ const StickyHeader:React.SFC<Props> = ({ contextRef }) => {
                     </div>
                 </div>
             </Sticky>
-
         </div>
     );
+
 }
 
 export default StickyHeader;

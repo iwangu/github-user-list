@@ -37,6 +37,7 @@ class UserProfile extends React.Component<Props, State> {
     }
 
     renderUserDetail() {
+
         return (
             <div>
                 <div className="hide-for-mobile">
@@ -48,6 +49,7 @@ class UserProfile extends React.Component<Props, State> {
                 </div>
             </div>
         )
+
     }
 
     render() {
@@ -57,6 +59,7 @@ class UserProfile extends React.Component<Props, State> {
             </div>
         );
     }
+
 }
 
 export default UserProfile;

@@ -34,7 +34,8 @@ export const App:React.StatelessComponent<{}> = () => {
                     )}
                 />
             </BrowserRouter>
-        </Provider>);
+        </Provider>
+    );
 }
 
 export default App;

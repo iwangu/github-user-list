@@ -45,7 +45,6 @@ class UserList extends React.Component<Props, State> {
     next() {
         this.props.onNext();
         this.props.onFetchUsers()
-
     }
 
     back() {
@@ -56,13 +55,10 @@ class UserList extends React.Component<Props, State> {
     handleContextRef = (contextRef:any) => this.setState({contextRef})
 
     render() {
-
         const { contextRef } = this.state
 
         return (
-
             this.props.users.length > 0 ?
-
                 <div ref={this.handleContextRef}>
                     <StickyHeader contextRef={contextRef}/>
                     <div style={{width: "80%",marginLeft: "10%"}}>
@@ -78,8 +74,8 @@ class UserList extends React.Component<Props, State> {
                     <Footer next={this.next} back={this.back}/>
                 </div>: null
         );
-
     }
+
 }
 
 export default UserList;
