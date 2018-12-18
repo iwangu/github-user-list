@@ -11,7 +11,7 @@ const StickyHeader:React.SFC<Props> = ({ contextRef }) => {
         <div style={{width: "100%", height: "90px"}}>
             <Sticky context={contextRef}>
                 <div style={{width: "100%", height: "90px"}}>
-                    <div style={{backgroundColor: "white", width: "82%", height: "100%", marginLeft: "9%"}}>
+                    <div style={{backgroundColor: "white", width: "100%", height: "100%", paddingLeft: "10%"}}>
                         <Menu
                             secondary
                             borderless={true}
@@ -20,8 +20,8 @@ const StickyHeader:React.SFC<Props> = ({ contextRef }) => {
                                 <Icon size='huge' name='github square'/>
                             </Menu.Item>
                         </Menu>
-                        <Divider fitted={true}/>
                     </div>
+                    <Divider fitted={true}/>
                 </div>
             </Sticky>
         </div>

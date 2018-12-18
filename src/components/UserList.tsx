@@ -61,17 +61,17 @@ class UserList extends React.Component<Props, State> {
             this.props.users.length > 0 ?
                 <div ref={this.handleContextRef}>
                     <StickyHeader contextRef={contextRef}/>
-                    <div style={{width: "80%",marginLeft: "10%"}}>
+                    <div style={{backgroundColor: "#f2f2f2", paddingTop: "20px",  paddingLeft: "10%", paddingRight: "10%"}}>
                         <Card.Group
                             doubling={true}
-                            itemsPerRow={6}>
+                            itemsPerRow={5}>
                             {this.props.users.map(user => (<UserListRow
                                 key={user.id}
                                 user={user}
                             />))}
                         </Card.Group>
+                        <Footer next={this.next} back={this.back}/>
                     </div>
-                    <Footer next={this.next} back={this.back}/>
                 </div>: null
         );
     }
